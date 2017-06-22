@@ -1,0 +1,223 @@
+body {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/*nav li a:hover .active {*/
+/*background-color: lightblue;*/
+/*color: white;*/
+/*}*/
+
+nav li a:hover:not(.active) {
+    background-color: darkcyan;
+    color: white;
+}
+
+.container {
+    color: darkgray;
+    font-family: "Arial";
+}
+
+nav .img-circle {
+    border-radius: 50%;
+    width: 150px;
+}
+
+#hone {
+    color: darkcyan;
+}
+
+#para {
+    border-bottom: 1px solid #5b5b5b;
+    color: darkcyan;
+}
+
+#hello {
+    font-family: "Arial";
+}
+
+/*GRID*/
+.container {
+    position: relative;
+    width: 100%;
+    /*max-width: 960px;*/
+    margin: 0 auto;
+    padding: 0 20px;
+    /*box-sizing: border-box; */
+}
+
+.one.columns {
+    width: 4.66666666667%;
+}
+
+.two.columns {
+    width: 13.3333333333%;
+}
+
+.three.columns {
+    width: 22%;
+}
+
+.four.columns {
+    width: 30.6666666667%;
+}
+
+.five.columns {
+    width: 39.3333333333%;
+}
+
+.six.columns {
+    width: 48%;
+}
+
+.seven.columns {
+    width: 56.6666666667%;
+}
+
+.eight.columns {
+    width: 65.3333333333%;
+}
+
+.nine.columns {
+    width: 74.0%;
+}
+
+.ten.columns {
+    width: 82.6666666667%;
+}
+
+.eleven.columns {
+    width: 91.3333333333%;
+}
+
+.twelve.columns {
+    width: 100%;
+    margin-left: 0;
+}
+
+.one-third.column {
+    width: 30.6666666667%;
+}
+
+.two-thirds.column {
+    width: 65.3333333333%;
+}
+
+.one-half.column {
+    width: 48%;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: darkgray;
+}
+
+input[type="checkbox"] {
+    display: inline;
+}
+
+input[type="text"], input[type="email"] {
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.personal {
+    font-family: "Arial";
+    color: #8aadb8;
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+    color: #8aadb8;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.htwo {
+    color: darkgray;
+}
+
+/*image gallery for portfolio*/
+div.gallery {
+    margin-top: 20px;
+    margin-right: 80px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 290px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
