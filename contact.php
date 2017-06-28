@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Keith_Brown</title>
     <Link rel="stylesheet" href="css/style.css" type="text/css">
+
 </head>
 <div class="container">
     <body>
@@ -16,10 +18,11 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
 
         </ul>
     </nav>
+
 
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
         <h2 id="hello">SAY HELLO...</h2>
@@ -42,40 +45,29 @@
                 <p>
                     <span style="color: black ;"><strong></strong></span>
                 </p></div>
+            <?php
+            if (isset($_POST["name"]) ||isset( $_POST["message"]) ||isset( $_POST["email"])) {
 
-            <form action="" method="POST">
-                <div>
+                $name = $_POST['name'];
+                $email = $_POST['email'];
+                $message = $_POST['message'];
 
-                    <label>
-                        <div>Name</div>
-                    </label>
-                    <div>
-                        <input type="text" name="name" value="" style="width: 50%;" required/>
-                    </div>
 
-                </div>
+                $to = "mkpindura@gmail.com";
+                $subject = "message";
+                $body = "this is an automated message, please dont reply to this email. \n\n $message";
 
-                <div>
-                    <label>
-                        <div>Email Address</div>
-                    </label>
-                    <div>
-                        <input type="email" name="email" value=""
-                               style="width: 50%;" required/>
-                    </div>
-                </div>
+                mail($to, $subject, $body);
 
-                <div>
-                    <label>
-                        <div>Message</div>
-                    </label>
-                    <div>
-                        <textarea name="message" style="width: 100%;" required></textarea>
-                    </div>
 
-                </div>
+            }
+            ?>
 
-                <input type="submit" class="btn btn-success" name="submit" value="Submit">
+            <form action="contact.php" method="POST">
+                Name: <br><input type="text" name="name" value=""  style="width: 50%;" required><br>
+                Email: <br><input type="email" name="email" value="" style="width: 50%;" required><br>
+                Message: <br><textarea name="message"></textarea><p>
+                    <input type="submit" name="submit" value="submit" class="btn btn-success">
             </form>
         </div>
 
