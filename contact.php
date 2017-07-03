@@ -58,12 +58,13 @@
                 $body = "this is an automated message, please dont reply to this email. \n\n $message";
 
                 mail($to, $subject, $body);
+                echo "message sent";
 
 
-            }
+            } 
             ?>
 
-            <form action="contact.php" method="POST">
+            <form action="" method="POST">
                 Name: <br><input type="text" name="name" value=""  style="width: 50%;" required><br>
                 Email: <br><input type="email" name="email" value="" style="width: 50%;" required><br>
                 Message: <br><textarea name="message"></textarea><p>
