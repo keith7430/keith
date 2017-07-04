@@ -2,90 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="jquery.js"></script>
-
+    <title>Keith Brown</title>
+    <Link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body>
-<script>
-<!--creating an array and imputing objects -->
-    var  jeans = [
-        {
-            name: "ripped",
-            size: "36",
-            color: "blue",
-            sex: "man",
-            make: ['water'],
-            price: ['R800'],
-            date: ['7-03-17']
-        },
 
-        {
-            name: "skinny",
-            size: "32",
-            color: "black",
-            sex: "women",
-            make: ['wools'],
-            price: ['R2000'],
-            date: ['10-04-17']
-
-        },
-
-        {
-            name: "drop",
-            size: "27",
-            color: "white",
-            sex: "man",
-            make: ['vanz'],
-            price: ['R1000'],
-            date: ['10-04-17']
-        }
-    ];
-
-//    foreach composure for the Jeans array and objects in the array
-
-    jeans.forEach(function (value, key) {
-
-//        displaying each value inside the parent array
-           document.write('name = '+value.name +':');
-        document.write('<br>');
-
-           document.write('size:'+value.size);
-        document.write('<br>');
-
-           document.write('color:'+value.color);
-        document.write('<br>');
-
-           document.write('type:'+value.sex);
-           document.write('<br/>');
-
-//         looping for the make array
-
-        value.make.forEach(function (brand,key) {
-            document.write('brand:'+brand);
-            document.write('<br/>');
-        });
-//        looping for the price array
-
-        value.price.forEach(function (price,key) {
-            document.write('amount:'+price);
-            document.write('<br/>');
-        });
-
-//        looping for the date array
-
-        value.date.forEach(function (date,key) {
-            document.write('date:'+date);
-            document.write('<br/>');
-        });
-        document.write('<br/>');
-
-    });
+<div class="container">
+    <body>
 
 
-</script>
+    <nav>
+
+        <ul>
+            <img class="img-circle" src="img/tyga.jpg" style="zoom:100%;">
+            <li><h1 id="hone">Keith Brown</h1></li>
+            <li><p id="para"> Trainee Web Developer</p></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
 
 
+    </nav>
 
-</body>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h2>Personal Statement</h2>
+        <div class="columns ten">
+            <p class="personal">
+                A young, ambitious and creative web developer with 6 months of experience in both front-end and back-end web development.  A logical and analytical thinker, who enjoys challenges and problem-solving.
+                Dedicated, and very curious, striving towards staying up to date with most relevant programming languages.
+            </p>
+
+            <ul>
+                <ol><h2 class="htwo">Development Skills</h2></ol>
+                <ol><p>Knowledge of PHP, CSS, XHTML and JAVASCRIPT</p></ol>
+                <ol><p>Good background of SQL</p></ol>
+                <ol><p>Good working memory of WORDPRESS</p></ol>
+                <ol><p>Experience with frameworks </p></ol>
+                <ol><p>Experience with Object Orientated Coding </p></ol>
+                <ol><p>Design thinking skills(innovative creative thinking)</p></ol>
+                <ol><p>Good experience in learning how to learn(self taught)</p></ol>
+            </ul>
+
+            <h2 class="htwo">EDUCATIONAL HISTORY</h2>
+
+            <p class="personal">2017- present: Code Space Academy – 6 month Web development Course<br>
+                Relevant modules include: CSS, XHTML, JAVASCRIPT, PHP, SQL and design
+                thinking for creative problem solving
+                </br>
+                <br>
+                2016-past: Cedar High School, Cape Town – National Senior Certificate
+                A aggregate attained in Economics, History and Life Orientation. Other subjects Mathematics and Life Sciences</p>
+
+            <h2 class="htwo">WORK EXPERIENCE</h2>
+            <ol><p>Barista – le Jeune Café, Woodstock  </p></ol>
+            <ol><p>(2016 during school holidays) </p></ol>
+
+
+           <h2 class="htwo"> Duties</h2>
+            <ol><p>Organising and managing stock</p></ol>
+                <ol><p>Making coffee for customers</p></ol>
+                <ol><p>Attending to customer needs</p></ol>
+                <ol><p>Managing customer payments</p></ol>
+
+                <h2 class="htwo">Skills Developed</h2>
+
+                <ol><p>Time management</p></ol>
+                <ol><p> Multitasking</p></ol>
+                <ol><p>Problem solving</p></ol>
+                <ol><p> Administration and planning</p></ol>
+                <ol><p> Customer service</p></ol>
+                <ol><p> Creative thinking</p></ol>
+                <ol><p> Decisiveness</p></ol>
+                <ol><p> Oral communication</p></ol>
+                <ol><p> Flexibility</p></ol>
+
+
+        </div>
+    </div>
+
+    </body>
+
+
+</div>
 </html>
